@@ -1,42 +1,138 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Soil Erosion and Agriculture</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Soil Erosion and Agriculture Blog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="about.html">About</a></li>
-			</ul>
-		</nav>
-		<div class="hero-image" style="background-image: url('https://eos.com/wp-content/uploads/2019/12/soil-erosion-main.jpg');">
-			<div class="hero-text" style="background-color: rgb(197, 167, 102);">
-				<h1>Soil Erosion and Agriculture</h1>
-				<p>Learn about the impact of soil erosion on agriculture</p>
-			</div>
-		</div>
-	</header>
-	<main>
-		<div class="container">
-			<h2>What is Soil Erosion?</h2>
-			<p>Soil erosion is the process of detachment and movement of soil particles from their original location. It is a natural process that occurs due to various factors such as wind, water, and gravity. However, human activities such as deforestation, overgrazing, and poor land management practices have accelerated the process of soil erosion.</p>
-			<img src="./pic1.jpg" alt="img">
-			<h2>Impact of Soil Erosion on Agriculture</h2>
-			<p>Soil erosion has a significant impact on agriculture. It reduces the fertility of the soil and decreases crop yields. Soil erosion also leads to soil compaction, which makes it difficult for plant roots to penetrate the soil and absorb nutrients. This can lead to the death of plants and loss of crop production.</p>
-			<img src="./pic22.jpeg" alt="Img2" width="770">
-			<h2>Prevention of Soil Erosion</h2>
-			<p>Soil erosion can be prevented by implementing soil conservation practices such as planting cover crops, terracing, and contour farming. These practices help to reduce the impact of erosion and maintain soil fertility.</p>
-			<img src="./conclusion.gif" alt="" width="770">
-			<h2>Conclusion</h2>
-			<p>Soil erosion is a serious problem that affects agriculture and the environment. It is important to take measures to prevent soil erosion and maintain soil fertility to ensure sustainable agriculture.</p>
-			<img src="./chart.png" alt="" width="770">
-		</div>
-	</main>
-	<footer>
-		<p>Copyright © Soil Erosion
-	</footer>
+    <header class="blog-header">
+        <div class="logo">🌱 Soil Erosion Blog</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search articles...">
+            <button onclick="searchPosts()">🔍</button>
+        </div>
+    </header>
+    <div class="blog-layout">
+        <aside class="sidebar">
+            <section class="author-info">
+                <a href="https://www.linkedin.com/in/syed-aaqib/" target="_blank">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQHtZUv0H06cdw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1683663035715?e=1755734400&v=beta&t=QyBJZkjswVfGmZbT6kuHM0qIGDY_HhHj7WoaOuZvDD0" alt="Syed Aaqib" class="author-img">
+                </a>
+                <h3><a href="https://www.linkedin.com/in/syed-aaqib/" target="_blank">Syed Aaqib</a></h3>
+                <p>Website Developer & Blogger</p>
+            </section>
+            <section class="recent-posts">
+                <h4>Recent Posts</h4>
+                <ul id="recentPosts">
+                    <!-- Dynamic posts will be loaded here -->
+                </ul>
+            </section>
+            <section class="tags">
+                <h4>Tags</h4>
+                <div class="tag-list" id="tagList">
+                    <!-- Dynamic tags will be loaded here -->
+                </div>
+            </section>
+        </aside>
+        <main class="blog-main">
+            <article class="blog-post" id="mainPost">
+                <div class="hero-image" style="background-image: url('https://eos.com/wp-content/uploads/2019/12/soil-erosion-main.jpg');">
+                    <div class="hero-text" style="background-color: rgba(197, 167, 102, 0.85);">
+                        <h1>Soil Erosion and Agriculture</h1>
+                        <p>Learn about the impact of soil erosion on agriculture</p>
+                    </div>
+                </div>
+                <section>
+                    <h2>What is Soil Erosion?</h2>
+                    <div class="tags">Tags: <span>Soil</span> <span>Environment</span></div>
+                    <p>Soil erosion is the process of detachment and movement of soil particles from their original location. It is a natural process that occurs due to various factors such as wind, water, and gravity. However, human activities such as deforestation, overgrazing, and poor land management practices have accelerated the process of soil erosion.</p>
+                    <img src="./pic1.jpg" alt="img" class="post-img">
+                </section>
+                <section>
+                    <h2>Impact of Soil Erosion on Agriculture</h2>
+                    <div class="tags">Tags: <span>Agriculture</span> <span>Farming</span></div>
+                    <p>Soil erosion has a significant impact on agriculture. It reduces the fertility of the soil and decreases crop yields. Soil erosion also leads to soil compaction, which makes it difficult for plant roots to penetrate the soil and absorb nutrients. This can lead to the death of plants and loss of crop production.</p>
+                    <img src="./pic22.jpeg" alt="Img2" width="770" class="post-img">
+                </section>
+                <section>
+                    <h2>Prevention of Soil Erosion</h2>
+                    <div class="tags">Tags: <span>Conservation</span> <span>Best Practices</span></div>
+                    <p>Soil erosion can be prevented by implementing soil conservation practices such as planting cover crops, terracing, and contour farming. These practices help to reduce the impact of erosion and maintain soil fertility.</p>
+                    <img src="./conclusion.gif" alt="" width="770" class="post-img">
+                </section>
+                <section>
+                    <h2>Conclusion</h2>
+                    <div class="tags">Tags: <span>Summary</span></div>
+                    <p>Soil erosion is a serious problem that affects agriculture and the environment. It is important to take measures to prevent soil erosion and maintain soil fertility to ensure sustainable agriculture.</p>
+                    <img src="./chart.png" alt="" width="770" class="post-img">
+                </section>
+            </article>
+            <section class="blog-post" id="upcomingPost">
+                <h2>Upcoming: How Cover Crops Prevent Erosion</h2>
+                <p><em>Stay tuned for our next article on cover crops and their role in soil conservation!</em></p>
+            </section>
+        </main>
+    </div>
+    <footer class="blog-footer">
+        <div class="footer-content">
+            <p>Copyright © Soil Erosion Blog 2024</p>
+            <div class="social-links">
+                <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Dynamic recent posts
+        const posts = [
+            { title: "Soil Erosion and Agriculture", url: "#" },
+            { title: "How Cover Crops Prevent Erosion", url: "#" },
+            { title: "Terracing Techniques Explained", url: "#" },
+            { title: "Best Practices for Sustainable Farming", url: "#" }
+        ];
+        const recentPosts = document.getElementById('recentPosts');
+        posts.forEach(post => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = post.url;
+            a.textContent = post.title;
+            li.appendChild(a);
+            recentPosts.appendChild(li);
+        });
+        // Dynamic tags
+        const tags = ["Soil", "Agriculture", "Conservation", "Farming", "Environment", "Best Practices", "Summary"];
+        const tagList = document.getElementById('tagList');
+        tags.forEach(tag => {
+            const span = document.createElement('span');
+            span.textContent = tag;
+            tagList.appendChild(span);
+        });
+        // Simple search functionality
+        function searchPosts() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = posts.filter(post => post.title.toLowerCase().includes(query));
+            recentPosts.innerHTML = '';
+            filtered.forEach(post => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = post.url;
+                a.textContent = post.title;
+                li.appendChild(a);
+                recentPosts.appendChild(li);
+            });
+            if (filtered.length === 0) {
+                const li = document.createElement('li');
+                li.textContent = 'No posts found.';
+                recentPosts.appendChild(li);
+            }
+        }
+    </script>
 </body>
 </html>

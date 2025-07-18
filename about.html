@@ -1,25 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About Us</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>About Us | Soil Erosion Blog</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<header>
-		<h1>About Us</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis dolor enim. Integer id pharetra odio. Nulla facilisi. Sed rhoncus tortor eu tincidunt aliquet. Sed pulvinar convallis metus in consequat. Sed feugiat gravida bibendum. In mollis laoreet quam a vestibulum.</p>
-	</main>
-	<footer>
-		<p>&copy; 2023 - My Company Name</p>
-	</footer>
+    <header class="blog-header">
+        <div class="logo">🌱 Soil Erosion Blog</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search articles...">
+            <button>🔍</button>
+        </div>
+    </header>
+    <div class="blog-layout">
+        <aside class="sidebar">
+            <section class="author-info">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author" class="author-img">
+                <h3>By: John Doe</h3>
+                <p>Environmental Blogger & Agronomist</p>
+            </section>
+            <section class="recent-posts">
+                <h4>Recent Posts</h4>
+                <ul>
+                    <li><a href="index.html">Soil Erosion and Agriculture</a></li>
+                    <li><a href="#">How Cover Crops Prevent Erosion</a></li>
+                    <li><a href="#">Terracing Techniques Explained</a></li>
+                </ul>
+            </section>
+            <section class="tags">
+                <h4>Tags</h4>
+                <div class="tag-list">
+                    <span>About</span> <span>Team</span> <span>Mission</span>
+                </div>
+            </section>
+        </aside>
+        <main class="blog-main">
+            <article class="blog-post">
+                <h1>About Us</h1>
+                <section>
+                    <h2>Our Mission</h2>
+                    <p>We are dedicated to raising awareness about soil erosion and its impact on agriculture and the environment. Our goal is to provide reliable information, practical solutions, and inspire sustainable farming practices worldwide.</p>
+                </section>
+                <section>
+                    <h2>Research Team</h2>
+                    <div class="team-list">
+                        <div class="team-member">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe" class="author-img">
+                            <h4>John Doe</h4>
+                            <p>Founder & Environmental Blogger</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Smith" class="author-img">
+                            <h4>Jane Smith</h4>
+                            <p>Agronomist & Researcher</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Website Maker</h2>
+                    <div class="team-list">
+                        <div class="team-member">
+                            <a href="https://www.linkedin.com/in/syed-aaqib/" target="_blank">
+                                <img src="https://media.licdn.com/dms/image/D4D03AQFvQwQvQwQvQw/profile-displayphoto-shrink_200_200/0/1684848000000?e=1720051200&v=beta&t=QwQvQwQvQwQvQwQvQwQvQwQvQwQvQwQvQwQvQwQvQw" alt="Syed Aaqib" class="author-img">
+                            </a>
+                            <h4><a href="https://www.linkedin.com/in/syed-aaqib/" target="_blank">Syed Aaqib</a></h4>
+                            <p>Website Developer</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Contact Us</h2>
+                    <p>Have questions or want to collaborate? Reach out at <a href="mailto:info@soilerosionblog.com">info@soilerosionblog.com</a> or use our <a href="#contact">contact form</a>.</p>
+                </section>
+            </article>
+        </main>
+    </div>
+    <footer class="blog-footer">
+        <div class="footer-content">
+            <p>Copyright © Soil Erosion Blog 2024</p>
+            <div class="social-links">
+                <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
